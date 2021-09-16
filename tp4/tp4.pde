@@ -1,3 +1,4 @@
+//link de youtube :) https://youtu.be/w7nSrG4R-Ds
 PFont font1, font2;
 PImage [] foto = new PImage[4];
 String pantalla;
