@@ -72,7 +72,7 @@ void huir() {
   image(foto[4], 0, 0);
   textFont (font1);
   fill(255);
-  text("Al día siguiente, volvés a la oficina como si nada hubiese pasado la noche anterior.\nTodo parece irreal.\n¿Estarás vivo siquiera?", 400, 700);
+  text("Al día siguiente, volvés a la oficina como si nada\n hubiese pasado la noche anterior.\nTodo parece irreal.\n¿Estarás vivo siquiera?", 400, 500);
    }
   
   void final2(){

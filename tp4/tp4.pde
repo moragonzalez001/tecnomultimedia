@@ -27,6 +27,7 @@ void draw() {
   background(0);
   if (pantalla.equals("inicio")) {
     inicio();
+    frameCount = 0;
   } else if (pantalla.equals("entrada")) {
     entrada();
   } else if (pantalla.equals("pasillo")) {
@@ -79,7 +80,9 @@ void draw() {
   } else if (pantalla.equals ("entrada")){
     pantalla = "pasillo";
   } else if (pantalla.equals ("pasillo")){
-    pantalla = "decision";
+    pantalla = "cuarto";
+  } else if (pantalla.equals ("cuarto")){
+    pantalla = "decision"; 
   }  else if (pantalla.equals ("fondo1")){
     pantalla = "final1";
   } else if (pantalla.equals ("fondo2")){
