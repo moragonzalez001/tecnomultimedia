@@ -13,6 +13,8 @@ void inicio() {
 
 void entrada() {
   image(foto[0], 0, 0);
+  image(personaje, 160, 102);
+  personaje.resize (200, 200);
   textSize(1);
   fill (20);
   textFont (font1);
@@ -21,6 +23,8 @@ void entrada() {
 }
 void pasillo() {
   image(foto[1], 0, 0);
+  image(personaje, 330, 243);
+  personaje.resize (140, 140);
   textSize(15);
   fill (0);
   textFont (font1);
@@ -30,8 +34,11 @@ void pasillo() {
    
  void cuarto() {
   image(foto[2], 0, 0);
-  textSize(1);
+  image(personaje, 300, 300);
+  personaje.resize (150, 150);
   fill (0);
+  rect (300, 417, 200, 100);
+  textSize(1);
   textFont (font1);
   fill(255);
   text("Entrás a tu habitación. Pero ya estás ahí.\nUn escalofrío recorre tu espalda y quedás helado.", 400, 500);
@@ -71,12 +78,16 @@ void huir() {
    void final1() {
   image(foto[4], 0, 0);
   textFont (font1);
+  image(personaje, 340, 280);
+  personaje.resize (150, 150);
   fill(255);
   text("Al día siguiente, volvés a la oficina como si nada\n hubiese pasado la noche anterior.\nTodo parece irreal.\n¿Estarás vivo siquiera?", 400, 500);
    }
   
   void final2(){
     image (foto [5], 0, 0);
+    image(personaje, 340, 250);
+    personaje.resize (120, 120);
     textFont (font1);
     fill (255);
     text ("El tiempo pasó y casi no te acordas de quién eras antes de esa\nnoche: no volviste a ver a tu familia, a tus amigos, a nadie.\nTal vez, lo que pasó esa noche tuvo una razón de ser.", 400, 470);
@@ -84,6 +95,8 @@ void huir() {
    
   void final3(){
     image (foto [6], 0, 0);
+    image(personaje, 310, 220);
+    personaje.resize (180, 180);
     fill (255);
     text ("Finalmente, lograron llegar a un acuerdo:\nmantendrían todo en secreto.\nDespués de todo, hasta podría llegar a ser útil...", 400, 500);
  }

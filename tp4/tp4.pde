@@ -1,6 +1,7 @@
-//link de youtube :) https://youtu.be/w7nSrG4R-Ds
+//link de youtube :) https://youtu.be/woGraq5J3OY
 PFont font1, font2;
 PImage [] foto = new PImage[7];
+PImage personaje;
 String pantalla;
 float x1, x2, x3, x4, y1, y2, y3, w, h1, h2;
 void setup() {
@@ -8,6 +9,7 @@ void setup() {
   for (int i = 0; i < foto.length; i++){
   foto[i] = loadImage("foto"+i+".jpg");
   }
+  personaje = loadImage ("personaje.png");
   font1 = createFont ("PixeloidSans.otf", 12);
   font2 = createFont ("PixeloidSans-Bold.otf", 16);
   pantalla = "inicio";
